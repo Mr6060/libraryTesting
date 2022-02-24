@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libraryTesting", "libraryTesting\libraryTesting.vcxproj", "{488FD61D-4819-43E6-A6FC-3024BF94AE0C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sandbox", "sandbox\sandbox.vcxproj", "{C231A9E2-2967-4BBA-8A01-4E519FA09C93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{488FD61D-4819-43E6-A6FC-3024BF94AE0C}.Debug|x64.ActiveCfg = Debug|x64
+		{488FD61D-4819-43E6-A6FC-3024BF94AE0C}.Debug|x64.Build.0 = Debug|x64
+		{488FD61D-4819-43E6-A6FC-3024BF94AE0C}.Release|x64.ActiveCfg = Release|x64
+		{488FD61D-4819-43E6-A6FC-3024BF94AE0C}.Release|x64.Build.0 = Release|x64
+		{C231A9E2-2967-4BBA-8A01-4E519FA09C93}.Debug|x64.ActiveCfg = Debug|x64
+		{C231A9E2-2967-4BBA-8A01-4E519FA09C93}.Debug|x64.Build.0 = Debug|x64
+		{C231A9E2-2967-4BBA-8A01-4E519FA09C93}.Release|x64.ActiveCfg = Release|x64
+		{C231A9E2-2967-4BBA-8A01-4E519FA09C93}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF0A8E73-F05E-4EF3-859D-D38F48B26C23}
+	EndGlobalSection
+EndGlobal

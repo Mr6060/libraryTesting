@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "488fd61d-4819-43e6-a6fc-3024bf94ae0c": {
+      "ProjectGuid": "488fd61d-4819-43e6-a6fc-3024bf94ae0c",
+      "DisplayName": "libraryTesting",
+      "ColorIndex": 0
+    },
+    "c231a9e2-2967-4bba-8a01-4e519fa09c93": {
+      "ProjectGuid": "c231a9e2-2967-4bba-8a01-4e519fa09c93",
+      "DisplayName": "sandbox",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

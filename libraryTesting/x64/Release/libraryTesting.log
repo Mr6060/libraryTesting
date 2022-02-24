@@ -1,0 +1,22 @@
+﻿  AssetManager.cpp
+  fps.cpp
+  Game.cpp
+C:\dev\SFML-DEV\libraryTesting\libraryTesting\Game.cpp(78,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\dev\SFML-DEV\libraryTesting\libraryTesting\Game.cpp(79,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  papaya.cpp
+  Rectangle.cpp
+  utils.cpp
+  Window.cpp
+  Replacing x64\Release\Window.obj
+winmm.lib(WINMM.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
+gdi32.lib(GDI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
+openal32.lib(OpenAL32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_init already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_setup_managed already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_setup_vbr already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_init_vbr already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_setup_init already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+vorbis.lib(vorbisenc.obj) : warning LNK4006: vorbis_encode_ctl already defined in vorbisenc.lib(vorbisenc.obj); second definition ignored
+ws2_32.lib(WS2_32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
+  libraryTesting.vcxproj -> C:\dev\SFML-DEV\libraryTesting\x64\Release\papaya.lib

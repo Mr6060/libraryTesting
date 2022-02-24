@@ -1,0 +1,22 @@
+﻿  app.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\memory(3378,1): error C2248: 'testState::testState': cannot access private member declared in class 'testState'
+C:\dev\SFML-DEV\libraryTesting\sandbox\states\testState.h(10): message : see declaration of 'testState::testState'
+C:\dev\SFML-DEV\libraryTesting\sandbox\states\testState.h(8): message : see declaration of 'testState'
+C:\dev\SFML-DEV\libraryTesting\libraryTesting\scene\StateMachine.h(47): message : see reference to function template instantiation 'std::unique_ptr<testState,std::default_delete<testState>> std::make_unique<T,StateMachine&,sf::RenderWindow&,bool&,0>(StateMachine &,sf::RenderWindow &,bool &)' being compiled
+          with
+          [
+              T=testState
+          ]
+C:\dev\SFML-DEV\libraryTesting\sandbox\app.cpp(11): message : see reference to function template instantiation 'std::unique_ptr<testState,std::default_delete<testState>> StateMachine::build<testState>(StateMachine &,sf::RenderWindow &,bool)' being compiled
+  playState.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\memory(3378,1): error C2248: 'testState::testState': cannot access private member declared in class 'testState'
+C:\dev\SFML-DEV\libraryTesting\sandbox\states\testState.h(10): message : see declaration of 'testState::testState'
+C:\dev\SFML-DEV\libraryTesting\sandbox\states\testState.h(8): message : see declaration of 'testState'
+C:\dev\SFML-DEV\libraryTesting\libraryTesting\scene\StateMachine.h(47): message : see reference to function template instantiation 'std::unique_ptr<testState,std::default_delete<testState>> std::make_unique<T,StateMachine&,sf::RenderWindow&,bool&,0>(StateMachine &,sf::RenderWindow &,bool &)' being compiled
+          with
+          [
+              T=testState
+          ]
+C:\dev\SFML-DEV\libraryTesting\sandbox\states\playState.cpp(41): message : see reference to function template instantiation 'std::unique_ptr<testState,std::default_delete<testState>> StateMachine::build<testState>(StateMachine &,sf::RenderWindow &,bool)' being compiled
+  testState.cpp
+  Generating Code...

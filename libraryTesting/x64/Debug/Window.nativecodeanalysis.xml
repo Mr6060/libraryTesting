@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\dev\SFML-DEV\libraryTesting\libraryTesting\window\</FILEPATH>
+      <FILENAME>Window.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>26812</DEFECTCODE>
+    <DESCRIPTION>The enum type 'sf::Style::&lt;unnamed-enum-None&gt;' is unscoped. Prefer 'enum class' over 'enum' (Enum.3).</DESCRIPTION>
+    <FUNCTION>MyWindow::Window::Create</FUNCTION>
+    <DECORATED>?Create@Window@MyWindow@@AEAAXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\dev\SFML-DEV\libraryTesting\libraryTesting\window\</FILEPATH>
+      <FILENAME>Window.cpp</FILENAME>
+      <LINE>57</LINE>
+      <COLUMN>31</COLUMN>
+    </SFA>
+    <DEFECTCODE>26819</DEFECTCODE>
+    <DESCRIPTION>Unannotated fallthrough between switch labels (es.78).</DESCRIPTION>
+    <FUNCTION>MyWindow::Window::Update</FUNCTION>
+    <DECORATED>?Update@Window@MyWindow@@QEAAXXZ</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
