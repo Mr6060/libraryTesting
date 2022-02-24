@@ -3,7 +3,9 @@ C:\dev\SFML-DEV\libraryTesting\libraryTesting\Game.cpp(77,31): warning C4244: 'i
 C:\dev\SFML-DEV\libraryTesting\libraryTesting\Game.cpp(78,31): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   main.cpp
   papaya.cpp
+  State.cpp
   StateMachine.cpp
+  Window.cpp
   Generating Code...
 winmm.lib(WINMM.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored
 gdi32.lib(GDI32.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in opengl32.lib(OPENGL32.dll); second definition ignored

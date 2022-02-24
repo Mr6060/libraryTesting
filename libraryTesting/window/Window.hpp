@@ -21,7 +21,12 @@ namespace MyWindow{
         void SetMouseCursorVisible(bool l_isCursorVisible);
         void SetMouseCursorGrabbed(bool l_isCursorGrabbed);
 
-        void Update();
+        void SetTitle(const std::string& l_title);
+
+        void SetSize(const sf::Vector2u& l_size);
+        void SetView(const sf::View& l_view);
+
+        /*void Update();*/
 
         bool isDone();
         bool isFullScreen();

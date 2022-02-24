@@ -47,7 +47,7 @@ void StateMachine::LastState() {
 }
 
 void StateMachine::Update() {
-	//Let the state update the game
+	//Let the state update the 
 	m_states.top()->update();
 }
 

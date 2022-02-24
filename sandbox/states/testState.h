@@ -6,8 +6,8 @@
 //State myState(statemachine, window, true);
 
 class testState final : public State {
-
-	testState(StateMachine& machine, sf::RenderWindow& window, bool replace = true);
+public:
+	testState(StateMachine& machine, MyWindow::Window& window, bool replace = true);
 	
 	void pause() override;
 	void resume() override;

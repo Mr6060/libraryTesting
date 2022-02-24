@@ -1,7 +1,5 @@
 #include "Window.hpp"
 
-
-
 namespace MyWindow{
 
     Window::Window(){
@@ -43,11 +41,14 @@ namespace MyWindow{
         m_window.close();
     }
 
-    void Window::Update(){
+    /*void Window::Update(){
         sf::Event event;
         while(m_window.pollEvent(event)){
             switch (event.type)
             {
+            case sf::Event::Resized:
+                m_window.setView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
+                break;
             case sf::Event::Closed:
                 m_isDone = true;
                 break;
@@ -65,7 +66,7 @@ namespace MyWindow{
             #endif
             }
         }
-    }
+    }*/
 
     void Window::ToggleFullScreen(){
         m_isFullscreen = !m_isFullscreen;
@@ -74,7 +75,7 @@ namespace MyWindow{
     }
 
     void Window::BeginDraw(){
-        m_window.clear(sf::Color::Black);
+        m_window.clear();
     }
 
     void Window::EndDraw(){
@@ -94,6 +95,21 @@ namespace MyWindow{
     void Window::SetMouseCursorGrabbed(bool l_isCursorGrabbed)
     {
         m_window.setMouseCursorGrabbed(l_isCursorGrabbed);
+    }
+
+    void Window::SetTitle(const std::string& l_title)
+    {
+        m_window.setTitle(l_title);
+    }
+
+    void Window::SetSize(const sf::Vector2u& l_size)
+    {
+        m_window.setSize(l_size);
+    }
+
+    void Window::SetView(const sf::View& l_view)
+    {
+        m_window.setView(l_view);
     }
 
     bool Window::isDone() { return m_isDone; }

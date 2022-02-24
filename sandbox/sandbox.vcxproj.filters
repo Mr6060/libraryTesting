@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="obsolete.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="states\testState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

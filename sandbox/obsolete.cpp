@@ -5,7 +5,7 @@
 #include "./states/testState.h"
 
 
-int main() {
+int san() {
 	
 	AssetManager assetmanager;
 

@@ -7,8 +7,8 @@
 #include <stack>
 #include <stdexcept>
 
-namespace sf {
-	class RenderWindow;
+namespace MyWindow {
+	class Window;
 }
 
 class StateMachine
@@ -28,7 +28,7 @@ public:
 	void Quit();
 
 	template<typename T>
-	static std::unique_ptr<T> build(StateMachine& machine, sf::RenderWindow& window, bool replace = true);
+	static std::unique_ptr<T> build(StateMachine& machine, MyWindow::Window& window, bool replace = true);
 
 private:
 	//The stack of states
@@ -40,7 +40,7 @@ private:
 
 
 template<typename T>
-std::unique_ptr<T> StateMachine::build(StateMachine& machine, sf::RenderWindow& window, bool replace) {
+std::unique_ptr<T> StateMachine::build(StateMachine& machine, MyWindow::Window& window, bool replace) {
 	auto new_state = std::unique_ptr<T>{ nullptr };
 
 	try {

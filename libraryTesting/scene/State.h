@@ -1,4 +1,5 @@
 #pragma once
+#include "../window/Window.hpp"
 #include <memory>
 
 class StateMachine;
@@ -10,7 +11,7 @@ namespace sf {
 class State
 {
 public:
-	State(StateMachine& machine, sf::RenderWindow& window, bool replace = true);
+	State(StateMachine& machine, MyWindow::Window& window, bool replace = true);
 	virtual ~State() = default;
 
 	State(const State&) = delete;
@@ -27,7 +28,7 @@ public:
 
 protected:
 	StateMachine& m_machine;
-	sf::RenderWindow& m_window;
+	MyWindow::Window& m_window;
 
 	bool m_replacing;
 	std::unique_ptr<State> m_next;

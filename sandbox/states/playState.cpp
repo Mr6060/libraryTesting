@@ -1,12 +1,11 @@
 #include "playState.h"
+#include "testState.h"
 #include <memory>
 #include <iostream>
 
-#include "testState.h"
-
-playState::playState(StateMachine& machine, sf::RenderWindow& window, const bool replace)
+playState::playState(StateMachine& machine, MyWindow::Window& window, const bool replace)
 	: State{ machine, window, replace }
-	, m_alpha{ 0, 0, 0, 255 } // Start off opaque
+	, m_alpha{ 255, 0, 0, 255 } // Start off opaque
 {
 
 	// Fill the fader surface with black
@@ -25,17 +24,25 @@ void playState::resume() {
 }
 
 void playState::update() {
-	for (auto event = sf::Event{}; m_window.pollEvent(event);)
+	sf::Event ev;
+	//for (auto event = sf::Event{}; m_window.GetWindow().pollEvent(event);)
+	while(m_window.GetWindow().pollEvent(ev))
 	{
-		switch (event.type)
+		switch (ev.type)
 		{
 		case sf::Event::Closed:
 			m_machine.Quit();
 			break;
 
+		case sf::Event::Resized:
+			
+			m_window.SetView(sf::View(sf::FloatRect(0, 0, ev.size.width, ev.size.height)));
+			std::cout << "ev.size.width: " << ev.size.width << " ev.size.height: " << ev.size.height << '\n';
+			break;
+
 		case sf::Event::KeyPressed:
 		{
-			switch (event.key.code)
+			switch (ev.key.code)
 			{
 			case sf::Keyboard::Space:
 				m_next = StateMachine::build<testState>(m_machine, m_window, true);
@@ -44,7 +51,6 @@ void playState::update() {
 			case sf::Keyboard::Escape:
 				m_machine.Quit();
 				break;
-
 			default:
 				break;
 			}
@@ -65,10 +71,11 @@ void playState::update() {
 }
 
 void playState::draw() {
-	m_window.clear();
+
+	//m_window.Update();
 
 	if (m_alpha.a != 0)
-		m_window.draw(m_fader);
+		m_window.Draw(m_fader);
 
-	m_window.display();
+	m_window.EndDraw();
 }
