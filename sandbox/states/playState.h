@@ -5,9 +5,11 @@
 
 //State myState(statemachine, window, true);
 
+
+
 class playState final : public State {
 public:
-	playState(StateMachine& machine, MyWindow::Window& window, bool replace = true);
+	playState(StateMachine& machine, sf::RenderWindow& window, bool replace = true);
 	
 	void pause() override;
 	void resume() override;

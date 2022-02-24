@@ -11,10 +11,9 @@ void Application::run(){
 	const int HEIGHT = 720;
 
 	sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
-
-	m_window.SetTitle("PapayaGame");
-	m_window.SetSize(sf::Vector2u(WIDTH, HEIGHT));
-	//m_window.SetView(view);
+	m_window.create({ 1280, 720 }, "Test", sf::Style::Titlebar | sf::Style::Close );
+	m_window.setView(view);
+	m_window.setFramerateLimit(60);
 
 	//MyWindow::Window window = MyWindow::Window("Test", sf::Vector2u(400, 400), 60);
 	// Initialize the engine

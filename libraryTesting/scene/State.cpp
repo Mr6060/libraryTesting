@@ -1,6 +1,6 @@
 #include "State.h"
 
-State::State(StateMachine& machine, MyWindow::Window &window, const bool replace)
+State::State(StateMachine& machine, sf::RenderWindow&window, const bool replace)
 	: m_machine{ machine }, m_window{ window }, m_replacing{ replace }
 {
 

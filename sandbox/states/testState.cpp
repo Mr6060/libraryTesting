@@ -3,7 +3,7 @@
 #include <memory>
 #include <iostream>
 
-testState::testState(StateMachine& machine, MyWindow::Window& window, const bool replace)
+testState::testState(StateMachine& machine, sf::RenderWindow& window, const bool replace)
 	: State{ machine, window, replace }
 	, m_alpha{ 0, 255, 0, 255 } // Start off opaque
 {
@@ -26,7 +26,7 @@ void testState::resume() {
 }
 
 void testState::update() {
-	for (auto event = sf::Event{}; m_window.GetWindow().pollEvent(event);)
+	for (auto event = sf::Event{}; m_window.pollEvent(event);)
 	{
 		switch (event.type)
 		{
@@ -36,7 +36,7 @@ void testState::update() {
 
 		case sf::Event::Resized:
 
-			m_window.SetView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
+			m_window.setView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
 			std::cout << "ev.size.width: " << event.size.width << " ev.size.height: " << event.size.height << '\n';
 			break;
 
@@ -74,7 +74,7 @@ void testState::update() {
 void testState::draw() {
 	//m_window.Update();
 	if (m_alpha.a != 0)
-		m_window.Draw(m_fader);
+		m_window.draw(m_fader);
 
-	m_window.EndDraw();
+	m_window.display();
 }

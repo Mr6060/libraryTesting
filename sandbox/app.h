@@ -9,5 +9,5 @@ public:
 
 private:
 	StateMachine m_machine;
-	MyWindow::Window m_window;
+	sf::RenderWindow m_window;
 };

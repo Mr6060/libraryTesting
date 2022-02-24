@@ -4,14 +4,11 @@
 
 class StateMachine;
 
-namespace sf {
-	class RenderWindow;
-}
 
 class State
 {
 public:
-	State(StateMachine& machine, MyWindow::Window& window, bool replace = true);
+	State(StateMachine& machine, sf::RenderWindow& window, bool replace = true);
 	virtual ~State() = default;
 
 	State(const State&) = delete;
@@ -28,7 +25,7 @@ public:
 
 protected:
 	StateMachine& m_machine;
-	MyWindow::Window& m_window;
+	sf::RenderWindow& m_window;
 
 	bool m_replacing;
 	std::unique_ptr<State> m_next;

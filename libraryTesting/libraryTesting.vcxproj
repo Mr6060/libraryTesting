@@ -95,7 +95,6 @@
     <ClCompile Include="scene\StateMachine.cpp" />
     <ClCompile Include="scene\State.cpp" />
     <ClCompile Include="utils\fps.cpp" />
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="papaya.cpp" />
     <ClCompile Include="sprite\Rectangle.cpp" />
@@ -107,7 +106,6 @@
     <ClInclude Include="scene\StateMachine.h" />
     <ClInclude Include="scene\State.h" />
     <ClInclude Include="utils\fps.hpp" />
-    <ClInclude Include="Game.hpp" />
     <ClInclude Include="Input.hpp" />
     <ClInclude Include="papaya.h" />
     <ClInclude Include="sprite\Rectangle.h" />
